@@ -87,8 +87,10 @@ const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
 // Check if logged in
 if (!loggedInUser) {
-    alert('Please log in!');
+    // 
     window.location.href = 'login.html';
+        alert('Please log in!');
+
 } else {
     // Pre-fill form
     document.getElementById('firstname').value = loggedInUser.name;

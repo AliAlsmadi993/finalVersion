@@ -42,7 +42,7 @@ form.addEventListener(
             alert(`Welcome, ${user.name}!`);
             // Save logged-in state to session storage
             localStorage.setItem('loggedInUser', JSON.stringify(user));
-            window.location.href = '/project3/index.html'
+            window.location.href = "./index.html";
 
 
         } else {

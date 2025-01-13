@@ -124,6 +124,6 @@ const SignUp_form = document.getElementById('SignUp_form')
         localStorage.setItem('users', JSON.stringify(users));
     
         // Redirect to login page after successful registration
-        window.location.href = "/project3/logIn.html";
+        window.location.href = "./logIn.html";
     });
     

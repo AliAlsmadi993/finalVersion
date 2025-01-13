@@ -205,6 +205,8 @@
         z-index: 5; /* للتأكد من أن القائمة لا تختفي */
     }
 
+    
+
     .navbar .link-list.show-links {
         display: flex;
     }
