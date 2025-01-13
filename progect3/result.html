@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Quiz Platform</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/project3/style/result.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/nav.css">
+
+    
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">CodCom</div>
+        <button class="toggle-x-btn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Links -->
+        <ul class="link-list" id="custom-menu">
+            <li class="link-item"><a href="index.html" class="active-link"  >Home</a></li>
+            <li class="link-item"><a href="aboutUs.HTml" >About Us</a></li>
+            <li class="link-item"><a href="contactUs.html" >Contact Us</a></li>
+            <li class="link-item" id="apply" style="display: none;"><a href="apply-test.html" >Apply Tests</a></li>
+            <li class="link-item" id="result" style="display: none;"><a href="result.html" >Result</a></li>
+            <li class="link-item"><a href="profile.html" >Profile</a></li>
+            <button class="btn-login" onclick="login()" >Login</button>
+
+
+        </ul>
+
+        <!-- Login Button -->
+    </div>
+    <button id="theme-toggle" class="btn btn-secondary ms-3">🌙</button>
+
+    <div class="container" id="container">
+        <div class="header">
+            <h1>Your Results</h1>
+            <div id="test-buttons">
+                <button class="btn-result"  data-test="technical">Technical</button>
+                <button class="btn-result" data-test="english">English</button>
+                <button class="btn-result"  data-test="iq">IQ</button>
+            </div>
+            <p id="result-message" class="score"></p>
+            <p class="score" id="score"></p>
+        </div>
+        
+        <button id="show-answers" class="btn" style="display: none;">Show Answers</button>
+        <table id="answers-table" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Your Answer</th>
+                    <th>Correct Answer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Answers will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <footer class="bg-dark text-white text-center text-lg-start py-4" style="position: relative;margin-top: 10%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <h5>About Us</h5>
+                    <p>CodCom is a platform that provides various quizzes for job candidates to evaluate their
+                        skills
+                        and help companies find the right talent.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="text-white">Home</a></li>
+                        <li><a href="aboutUs.HTml" class="text-white">About Us</a></li>
+                        <li><a href="contactUs.html" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-3">
+                    <h5>Contact</h5>
+                    <p>Email: support@codcom.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-2">
+            <p class="mb-0">© 2025 CodCom. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/project3/js/result.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    
+    <script src="js/theme.js"></script>
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>

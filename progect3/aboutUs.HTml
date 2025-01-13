@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CodCom</title>
+    <link rel="stylesheet" href="style/abousUs.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/nav.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div  style="display: flex;">
+            <div class="logo"  >CodCom</div>
+            <button class="toggle-x-btn  "  onclick="toggleMenu()" >☰</button>
+    
+            <div class="navbar" style="justify-content: center; ">
+            <!-- Navigation Links -->
+            <ul class="link-list" id="custom-menu">
+                <li class="link-item"><a href="index.html" class="active-link"  >Home</a></li>
+                <li class="link-item"><a href="aboutUs.HTml" >About Us</a></li>
+                <li class="link-item"><a href="contactUs.html" >Contact Us</a></li>
+                <li class="link-item" id="apply" style="display: none;"><a href="apply-test.html" >Apply Tests</a></li>
+                <li class="link-item" id="result" style="display: none;"><a href="result.html" >Result</a></li>
+                <li class="link-item"><a href="profile.html" >Profile</a></li>
+                  <!-- Login Button -->
+            <button class="btn-login" onclick="login()" style="right: 28px;
+            border-radius: 15px; margin: 5px 0px;
+            top: 22px;">Login</button>
+            </div>
+          
+        </div>
+            </ul>
+       
+    </header>
+   
+    <div class="slider">
+
+
+        <div class="list">
+
+            <div class="item">
+                <img src="logos/img1.jpg" style="filter:brightness(50%) ;" alt="">
+
+                <div class="content">
+                    <div class="title">Welcome To</div>
+                    <div class="type">CodCom</div>
+                    <div class="description" style="font-size: x-large;">
+                         where innovation meets excellence in the world <br>of software development.
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="logos/img2.jpg" style="filter:brightness(50%) ;" alt="">
+
+                <div class="content">
+                    <div class="title">Who We Are</div>
+                    <div class="type" style="font-size: large;"> a passionate team of developers</div>
+                    <div class="description" style="font-size: medium;">
+
+                        At CodCom, we specialize in web development, mobile apps, and custom software, 
+                        delivering innovative, user-friendly solutions. With years of experience,
+                         we combine creativity and functionality to bring ideas to life and help clients achieve their goals through cutting-edge technology.
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="logos/img4.jpg" style="filter:brightness(50%) ;" alt="">
+
+                <div class="content">
+                    <div class="title">Our Mission</div>
+                    <div class="type" style="font-size: large;">design, develop, and deliver innovative<br> digital solutions that drive growth</div>
+                    <div class="description" style="font-size: medium;">
+                        Our mission is to design, develop, and deliver innovative digital solutions that drive growth, efficiency, and success for our clients. We strive to understand the unique needs of each client and provide tailored solutions  that exceed their<br> expectations.
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="logos/img3.jpg" style="filter:brightness(50%) ;" alt="">
+
+                <div class="content">
+                    <div class="title">Our Vision</div>
+                    <div class="type" style="font-size: large;" >To be a leading programming company</div>
+                    <div class="description" style="font-size: medium;  ">
+                        At CodCom, we aim to lead globally in software development,
+                         driving innovation and excellence. Our focus is on quality, creativity, 
+                        and collaboration to transform ideas into impactful digital solutions.
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="thumbnail">
+
+            <div class="item">
+                <img src="logos/img1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="logos/img2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="logos/img3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="logos/img4.jpg" alt="">
+            </div>
+
+        </div>
+
+
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+    <!-- About Us Slaider -->
+    <!-- <section id="aboutUs">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active"> <!-- الشريحة النشطة -->
+                    <!-- <h2>About Us</h2>
+                    <p>Welcome to CodCom, where innovation meets technology.</p>
+                </div>
+                <div class="slide">
+                    <h2>Who We Are</h2>
+                    <p>At CodCom, we are a passionate team of developers...</p>
+                </div>
+                <div class="slide">
+                    <h2>Our Vision</h2>
+                    <p>To be a leading programming company...</p>
+                </div>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section> --> 
+
+
+
+    <!-- About Us section -->
+    <section id="company-details">
+        <div class="container">
+            <!-- <h2>Who We Are</h2>
+            <p>
+                At CodCom, we are more than just a programming company. We are a team of passionate individuals who
+                believe in the power of technology to transform businesses and lives. Our mission is to provide
+                innovative and reliable solutions that help our clients achieve their goals.
+            </p>
+            <p>
+                With years of experience in the industry, we specialize in web development, mobile applications, and
+                custom software solutions. Our team is dedicated to delivering high-quality products that are not only
+                functional but also user-friendly and visually appealing.
+            </p>
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to design, develop, and deliver innovative digital solutions that drive growth,
+                efficiency, and success for our clients. We strive to understand the unique needs of each client and
+                provide tailored solutions that exceed their expectations.
+            </p> -->
+            <section id="why-choose-us">
+                <div class="container">
+                    <h2>Why Choose Us?</h2>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h3>Expert Team</h3>
+                            <p>Our team consists of highly skilled developers and designers with years of experience.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Innovative Solutions</h3>
+                            <p>We leverage the latest technologies to deliver cutting-edge solutions.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Client-Centric Approach</h3>
+                            <p>We prioritize our clients' needs and work closely with them to achieve their goals.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Quality Assurance</h3>
+                            <p>We ensure that every product we deliver meets the highest standards of quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+
+            <footer class="bg-dark text-white text-center text-lg-start py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-3">
+                            <h5>About Us</h5>
+                            <p>CodCom is a platform that provides various quizzes for job candidates to evaluate their
+                                skills
+                                and help companies find the right talent.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-3">
+                            <h5>Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="home.html" class="text-white">Home</a></li>
+                                <li><a href="aboutUs.HTml" class="text-white">About Us</a></li>
+                                <li><a href="contactUs.html" class="text-white">Contact Us</a></li>
+                                <li><a href="#" class="text-white">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mb-3">
+                            <h5>Contact</h5>
+                            <p>Email: support@codcom.com</p>
+                            <p>Phone: +123 456 7890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center py-2">
+                    <p class="mb-0">© 2025 CodCom. All Rights Reserved.</p>
+                </div>
+            </footer>
+
+            <script src="js/abousUs.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="js/theme.js"></script>
+            <script src="/project3/js/nav.js"></script>
+
+</body>
+
+</html>

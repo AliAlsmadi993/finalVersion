@@ -1,0 +1,113 @@
+[
+    {
+        "id": 1,
+        "question": "Pick the noun.",
+        "options": [
+            "Run",
+            "Jump",
+            "Cat",
+            "Quickly"
+        ],
+        "correctAnswer": "Cat"
+    },
+    {
+        "id": 2,
+        "question": "Plural of 'child'?",
+        "options": [
+            "Childs",
+            "Children",
+            "Childes",
+            "Childrens"
+        ],
+        "correctAnswer": "Children"
+    },
+    {
+        "id": 3,
+        "question": "Choose the correct tense.",
+        "options": [
+            "She go to school.",
+            "She goes to school.",
+            "She going to school.",
+            "She is go to school."
+        ],
+        "correctAnswer": "She goes to school."
+    },
+    {
+        "id": 4,
+        "question": "Synonym of 'happy'?",
+        "options": [
+            "Sad",
+            "Joyful",
+            "Angry",
+            "Tired"
+        ],
+        "correctAnswer": "Joyful"
+    },
+    {
+        "id": 5,
+        "question": "Find the verb: 'The dog barked.'",
+        "options": [
+            "Dog",
+            "Barked",
+            "Loudly",
+            "The"
+        ],
+        "correctAnswer": "Barked"
+    },
+    {
+        "id": 6,
+        "question": "Correct adjective: 'This is the ______ book.'",
+        "options": [
+            "Good",
+            "Better",
+            "Best",
+            "Most good"
+        ],
+        "correctAnswer": "Best"
+    },
+    {
+        "id": 7,
+        "question": "Pick the correct tense.",
+        "options": [
+            "I had been watching TV.",
+            "I have been watch TV.",
+            "I was watched TV.",
+            "I watching TV."
+        ],
+        "correctAnswer": "I had been watching TV."
+    },
+    {
+        "id": 8,
+        "question": "Meaning of 'a piece of cake'?",
+        "options": [
+            "A delicious dessert",
+            "Something easy",
+            "Very expensive",
+            "A small part"
+        ],
+        "correctAnswer": "Something easy"
+    },
+    {
+        "id": 11,
+        "question": "Which word is a verb?",
+        "options": [
+            "Walk",
+            "Blue",
+            "Chair",
+            "Beautiful"
+        ],
+        "correctAnswer": "Walk"
+    }
+    ,
+    {
+        "id": 10,
+        "question": "Pick the onomatopoeia.",
+        "options": [
+            "Buzz",
+            "Bright",
+            "Soft",
+            "Quick"
+        ],
+        "correctAnswer": "Buzz"
+    }
+]

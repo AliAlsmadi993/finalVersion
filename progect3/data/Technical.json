@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "question": "What does HTML stand for?",
+        "options": [
+            "Hyper Text Markup Language",
+            "Home Tool Markup Language",
+            "Hyperlinks and Text Markup Language",
+            "Hyper Tool Mark Language"
+        ],
+        "correctAnswer": "Hyper Text Markup Language"
+    },
+    {
+        "id": 2,
+        "question": "Which data structure uses FIFO (First In, First Out)?",
+        "options": [
+            "Stack",
+            "Queue",
+            "Array",
+            "Linked List"
+        ],
+        "correctAnswer": "Queue"
+    },
+    {
+        "id": 3,
+        "question": "What is the file extension for a Python file?",
+        "options": [
+            ".py",
+            ".java",
+            ".js",
+            ".cpp"
+        ],
+        "correctAnswer": ".py"
+    },
+    {
+        "id": 4,
+        "question": "Which programming language is known as the 'mother of all languages'?",
+        "options": [
+            "C",
+            "Python",
+            "Java",
+            "Assembly"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "id": 5,
+        "question": "What does the term 'inheritance' mean in object-oriented programming?",
+        "options": [
+            "A class borrowing properties of another class",
+            "Storing data in memory",
+            "A class overriding properties of another class",
+            "None of the above"
+        ],
+        "correctAnswer": "A class borrowing properties of another class"
+    },
+    {
+        "id": 6,
+        "question": "What is the purpose of the `git pull` command?",
+        "options": [
+            "Push changes to a remote repository",
+            "Fetch and merge changes from a remote repository",
+            "Delete a branch from a repository",
+            "List all branches in a repository"
+        ],
+        "correctAnswer": "Fetch and merge changes from a remote repository"
+    },
+    {
+        "id": 7,
+        "question": "Which algorithm is used for finding the shortest path in a graph?",
+        "options": [
+            "Merge Sort",
+            "Dijkstra's Algorithm",
+            "Binary Search",
+            "Depth First Search"
+        ],
+        "correctAnswer": "Dijkstra's Algorithm"
+    },
+    {
+        "id": 8,
+        "question": "What is the Big-O complexity of searching for an element in a balanced binary search tree?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n^2)"
+        ],
+        "correctAnswer": "O(log n)"
+    },
+    {
+        "id": 9,
+        "question": "What is the difference between a process and a thread?",
+        "options": [
+            "A process is lightweight, and a thread is heavyweight.",
+            "A process is independent, and threads share memory.",
+            "A thread is independent, and processes share memory.",
+            "A process is executed within threads."
+        ],
+        "correctAnswer": "A process is independent, and threads share memory."
+    },
+    {
+        "id": 10,
+        "question": "What does the term 'ACID' refer to in databases?",
+        "options": [
+            "Atomicity, Consistency, Isolation, Durability",
+            "Access, Control, Integrity, Durability",
+            "Authentication, Consistency, Integration, Data",
+            "Atomicity, Consistency, Integrity, Dependency"
+        ],
+        "correctAnswer": "Atomicity, Consistency, Isolation, Durability"
+    }
+]

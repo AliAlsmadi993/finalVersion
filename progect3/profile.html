@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/profile.css">
+    <script src="https://kit.fontawesome.com/501a070fcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/nav.css">
+</head>
+<body>
+    
+
+
+  <div class="container" style="display: flex; flex-wrap: wrap;">
+    <div class="navbar">
+        <div class="logo">CodCom</div>
+        <button class="toggle-x-btn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Links -->
+        <ul class="link-list" id="custom-menu">
+            <li class="link-item"><a href="index.html" class="active-link"  >Home</a></li>
+            <li class="link-item"><a href="aboutUs.HTml" >About Us</a></li>
+            <li class="link-item"><a href="contactUs.html" >Contact Us</a></li>
+            <li class="link-item" id="apply" style="display: none;"><a href="apply-test.html" >Apply Tests</a></li>
+            <li class="link-item" id="result" style="display: none;"><a href="result.html" >Result</a></li>
+            <button class="btn-login" onclick="login()" >Login</button>
+
+        </ul>
+
+        <!-- Login Button -->
+    </div>
+    <div class="Leftside">
+       <img src="Profile.jpg" id="userImg">
+       <!-- <label for="photo-input">Update Photo </label>
+       <input type="file" id="photo-input" accept="image/*" /> -->
+       <div  style="display: flex;align-items: center;gap: 8px; ">
+        <i class="fa-duotone fa-solid fa-award" ></i>
+        <a href="result.html"><h4>Scors</h4></a>
+    </div>
+   
+    </div>
+     <div class="Rightside">
+       <h3 >User Profile</h3>
+      <form >
+       
+       <div class="Name">
+           <div class="Field">
+       <label>First Name:</label><br>
+       <input type="text" name="FirstName" id="firstname" value="" readonly>
+       <p id="pFirstName" class="error"></p>
+   </div>
+          
+   </div>
+     
+   <div class="Field">
+       <label>Email:</label>
+       <input type="text" name="Email" id="email" readonly>
+       <p id="pEmail" class="error"></p>
+   </div> 
+   
+   <div class="Field">
+       <label>Contact Number:</label>
+       <input type="text" name="Phone" id="phone" readonly>
+       <p id="pConfirmNumber" class="error"></p>
+   </div> 
+      
+   <div class="Field">
+       <label>Country:</label>
+       <input type="text" name="Country" id="country" readonly>
+   </div> 
+     <div class="buttons">
+     <button id="editInfo" class="button">Edit</button>
+     
+    </div>
+      </form>
+     </div>
+
+
+   </div>
+
+    <script>
+       
+
+// Retrieve user from sessionStorage
+const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
+// Check if logged in
+if (!loggedInUser) {
+    alert('Please log in!');
+    window.location.href = 'login.html';
+} else {
+    // Pre-fill form
+    document.getElementById('firstname').value = loggedInUser.name;
+    document.getElementById('email').value = loggedInUser.email;
+    document.getElementById('phone').value = loggedInUser.phone;
+    document.getElementById('country').value = loggedInUser.country;
+    if (loggedInUser.img) {
+        document.getElementById("userImg").src = loggedInUser.img;
+    }
+}
+
+document.getElementById("editInfo").addEventListener("click",function(event){
+    event.preventDefault(); // لمنع أي تصرف افتراضي للزر
+    window.location.href = "EditProfile.html";
+})
+
+    </script>
+
+<script src="js/theme.js"></script>
+<script src="js/nav.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "question": "What comes next in the sequence? 2, 4, 6, 8, ...",
+        "options": ["10", "11", "12", "13"],
+        "correctAnswer": "10"
+    },
+    {
+        "id": 2,
+        "question": "If you have 3 apples and take away 2, how many do you have?",
+        "options": ["1", "2", "3", "0"],
+        "correctAnswer": "2"
+    },
+    {
+        "id": 3,
+        "question": "Which of the following is a square number?",
+        "options": ["8", "16", "18", "20"],
+        "correctAnswer": "16"
+    },
+    {
+        "id": 4,
+        "question": "Find the odd one out: Cat, Dog, Elephant, Car",
+        "options": ["Cat", "Dog", "Elephant", "Car"],
+        "correctAnswer": "Car"
+    },
+    {
+        "id": 5,
+        "question": "Which word is the opposite of 'gloomy'?",
+        "options": ["Bright", "Dark", "Quiet", "Cloudy"],
+        "correctAnswer": "Bright"
+    },
+    {
+        "id": 6,
+        "question": "What is 15% of 200?",
+        "options": ["20", "25", "30", "35"],
+        "correctAnswer": "30"
+    },
+    {
+        "id": 7,
+        "question": "If 5x = 20, what is x?",
+        "options": ["2", "3", "4", "5"],
+        "correctAnswer": "4"
+    },
+    {
+        "id": 8,
+        "question": "What is the next number in the sequence? 1, 1, 2, 3, 5, ...",
+        "options": ["6", "7", "8", "9"],
+        "correctAnswer": "8"
+    },
+    {
+        "id": 9,
+        "question": "A clock strikes once at 1 o'clock, twice at 2 o'clock, and so on. How many times does it strike in a day?",
+        "options": ["156", "144", "168", "180"],
+        "correctAnswer": "156"
+    },
+    {
+        "id": 10,
+        "question": "Rearrange the letters to form a word: 'RALETI'",
+        "options": ["Latter", "Retail", "Trail", "Tailor"],
+        "correctAnswer": "Retail"
+    }
+]

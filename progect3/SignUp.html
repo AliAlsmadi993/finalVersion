@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Stick+No+Bills:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/SignUp.css">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style/nav.css">
+</head>
+<body>
+   
+        <section id="SignUp_page" style="display: flex; flex-wrap: wrap;">
+            <div class="navbar" style="width: 100%;">
+                <div class="logo">CodCom</div>
+                <button class="toggle-x-btn" onclick="toggleMenu()">☰</button>
+        
+                <!-- Navigation Links -->
+                <ul class="link-list" id="custom-menu">
+                    <li class="link-item"><a href="index.html" class="active-link"  >Home</a></li>
+                    <li class="link-item"><a href="aboutUs.HTml" >About Us</a></li>
+                    <li class="link-item"><a href="contactUs.html" >Contact Us</a></li>
+                    <li class="link-item" id="apply" style="display: none;"><a href="apply-test.html" >Apply Tests</a></li>
+                    <li class="link-item" id="result" style="display: none;"><a href="result.html" >Result</a></li>
+                    <li class="link-item"><a href="profile.html" >Profile</a></li>
+
+                </ul>
+        
+                <!-- Login Button -->
+                <button class="btn-login" onclick="login()" >Login</button>
+            </div>
+            
+            
+        <div id="SignUp_img_side" style="width: 47%;">
+            <img src="logos/codcom3.jpeg" alt="" width="100%" height="100%">
+        </div>
+        <div id="SignUp_side" style="width: 47%; ">
+        <p id="SignUp_titel">Sign Up</p>
+    
+        <form action=""  id="SignUp_form">
+    
+    
+            <label for="userName"> User Name :</label>
+            <input type="text" name="userName"  class="input_field" id="userName_input" value="" required>
+            <p id="userName_message_validate" class="message"></p>
+
+            <label for="email"> Email :</label>
+            <input type="text" name="email"  class="input_field" id="email_input" value="" required>
+            <p id="email_message_validate" class="message"></p>
+    
+            <label for="password"> Password :</label>
+            <input type="text" name="password"  class="input_field" id="password_input" value="" required>
+            <p id="password_message_validate" class="message"></p>
+
+            <label for="confirmPassword">Confirm Password :</label>
+            <input type="text" name="confirmPassword"  class="input_field" id="confirm_Password_input" value="" required>
+            <p id="confirm_password_message_validate" class="message"></p>
+    
+    
+            <!-- <input type="button" value="LOG IN"> -->
+    
+        </form>
+        
+        <button id="SignUp_btn" type="submit" form="SignUp_form">Sign Up</button>
+        <p id="login_link">OR <a href="logIn.html">LOG IN.</a> </p>
+    
+        </div>
+        </section>
+        <script src="js/SignUp.js"></script>
+        <script src="js/theme.js"></script>
+        <script src="js/nav.js"></script>
+
+        
+</body>
+</html>

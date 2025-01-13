@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ Test - Quiz Platform</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/project3/style/test.css">
+    <link rel="stylesheet"  href="style/nav.css">
+    
+</head>
+<body>
+
+
+<header>
+
+    <div class="navbar">
+        <div class="logo">CodCom</div>
+        <button class="toggle-x-btn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Links -->
+        <ul class="link-list" id="custom-menu">
+            <li class="link-item"><a href="index.html" class="active-link"  >Home</a></li>
+            <li class="link-item"><a href="aboutUs.HTml" >About Us</a></li>
+            <li class="link-item"><a href="contactUs.html" >Contact Us</a></li>
+            <li class="link-item" id="apply" style="display: none;"><a href="apply-test.html" >Apply Tests</a></li>
+            <li class="link-item" id="result" style="display: none;"><a href="result.html" >Result</a></li>
+            <li class="link-item"><a href="profile.html" >Profile</a></li>
+            <button class="btn-login" onclick="login()" >Login</button>
+
+        </ul>
+</header>
+<button id="theme-toggle" class="btn btn-secondary ms-3">🌙</button>
+
+    <div class="header">
+        <h2 id="test-title">Test - Quiz Platform</h2>
+        <p class="policy" id="test-policy">This test is timed for 15 minutes. Once you answer a question, you cannot return to it. Good luck!</p>
+    </div>
+    <div class="test-container">
+        <div class="timer" id="timer">15:00</div>
+        <div class="progress-info" id="progress-info">Question 1 of 10</div>
+        <h2 class="question" id="question">Loading...</h2>
+        <ul class="options" id="options"></ul>
+        <div class="navigation">
+            <button id="next-btn" class="btn" disabled>Next</button>
+        </div>
+    </div>
+
+    <div class="modal" id="submit-modal">
+        <div class="modal-content">
+            <p>Are you sure you want to submit the test?</p>
+            <button class="yes-btn">Submit</button>
+        </div>
+    </div>
+
+    <script src="/project3/js/test.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/nav.js"></script>
+
+</body>
+</html>

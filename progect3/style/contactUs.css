@@ -1,0 +1,475 @@
+/* عام */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* شريط التنقل */
+.custom-navbar {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-brand {
+    color: #FFFFFF !important;
+    font-weight: bold;
+}
+
+.custom-brand:hover {
+    color: #D1ECF1 !important;
+}
+
+.custom-link {
+    color: #FFFFFF !important;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.custom-link:hover {
+    color: #D1ECF1 !important;
+}
+
+.custom-link.active {
+    color: #FFD700 !important;
+    font-weight: bold;
+}
+
+/* زر تسجيل الدخول */
+.custom-btn {
+    background-color: #FFFFFF !important;
+    color: #007BFF !important;
+    border: none !important;
+    margin-right: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #D1ECF1 !important;
+    color: #0056b3 !important;
+    border: 1px solid #007BFF !important;
+}
+
+/* تخصيص زر الـ navbar-toggler */
+.navbar-toggler {
+    background-color: #FFFFFF !important;
+    border: none !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #007BFF !important;
+}
+/* Contact Us Section */
+/* Contact Us Section */
+.contact-us {
+    margin-top: -38px;
+    position: relative;
+    overflow: hidden;
+    color: #FFFFFF;
+    text-align: center;
+    height: 500px; /* Adjust height here */
+}
+
+.slider-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    transform: scale(1.1); /* Zoom effect */
+}
+
+.slider-slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.slider-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#ContactUsHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+/* Contact Content */
+.contact-content {
+    color: white;
+    background: #007bff;padding: 40px;
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.info-box {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-box i {
+    font-size: 1.8rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.info-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.info-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.social-media a {
+    margin: 5px;
+    font-size: 1.5rem;
+    color: #007BFF;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+    color: #0056b3;
+}
+
+/* بطاقة نموذج الاتصال */
+.contact-form-card {
+    flex: 1;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #007BFF;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.btn-submit {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Map Section */
+.map-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.map-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+footer p,
+footer ul {
+    color: #cccccc;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    color: #cccccc;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ffffff;
+}
+
+/* الوضع الداكن */
+body.dark-mode {
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+/* استعلامات الوسائط */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .info-box i {
+        font-size: 1.5rem;
+    }
+
+    .info-box h3 {
+        font-size: 1.1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+}
+
+
+
+
+/* شريط التنقل */
+body.dark-mode .custom-navbar {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+}
+
+body.dark-mode .custom-brand {
+    color: #FFD700 !important;
+}
+
+body.dark-mode .custom-brand:hover {
+    color: #FFFFE0 !important;
+}
+
+body.dark-mode .custom-link {
+    color: #FFD700 !important;
+}
+
+body.dark-mode .custom-link:hover {
+    color: #FFFFE0 !important;
+}
+
+body.dark-mode .custom-link.active {
+    color: #FFFF00 !important;
+}
+
+/* زر تسجيل الدخول */
+body.dark-mode .custom-btn {
+    background-color: #1F1F1F !important;
+    color: #FFD700 !important;
+    border: none !important;
+}
+
+body.dark-mode .custom-btn:hover {
+    background-color: #2A2A2A !important;
+    color: #FFFFE0 !important;
+    border: 1px solid #FFD700 !important;
+}
+
+/* Contact Us Section */
+body.dark-mode .contact-us {
+    background-color: #1F1F1F;
+    color: #FFD700 !important;
+}
+
+body.dark-mode #ContactUsHeader {
+    background-color: #000d1aa8;
+}
+
+body.dark-mode .contact-us h1 {
+    color: #FFD700;
+}
+
+body.dark-mode .contact-us p {
+    color: #CCCCCC;
+}
+
+/* Contact Content */
+
+
+body.dark-mode .contact-info h2 {
+    color: #FFD700;
+}
+
+body.dark-mode .contact-info p {
+    color: #CCCCCC;
+}
+
+body.dark-mode .info-box i {
+    color: #FFD700;
+}
+
+body.dark-mode .info-box h3 {
+    color: #FFD700;
+}
+
+body.dark-mode .info-box p {
+    color: #CCCCCC;
+}
+
+body.dark-mode .social-media h3 {
+    color: #FFD700;
+}
+
+body.dark-mode .social-media a {
+    color: #FFD700;
+}
+
+body.dark-mode .social-media a:hover {
+    color: #FFFFE0;
+}
+
+/* بطاقة نموذج الاتصال */
+body.dark-mode .card {
+    background-color: #2A2A2A;
+    color: #FFD700;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .card h2 {
+    color: #FFD700;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: #1F1F1F;
+    color: #FFD700;
+    border: 1px solid #333333;
+}
+
+body.dark-mode .btn-submit {
+    background-color: #FFD700;
+    color: #121212;
+}
+
+body.dark-mode .btn-submit:hover {
+    background-color: #FFFFE0;
+    color: #121212;
+}
+
+/* Map Section */
+body.dark-mode .map-section {
+    background-color: #1F1F1F;
+    color: #FFD700;
+}
+
+body.dark-mode .map-section h2 {
+    color: #FFD700;
+}
+
+/* Footer */
+body.dark-mode footer {
+    background-color: #1F1F1F;
+    color: #FFD700;
+}
+
+body.dark-mode footer h5 {
+    color: #FFD700;
+}
+
+body.dark-mode footer p, 
+body.dark-mode footer ul {
+    color: #CCCCCC;
+}
+
+body.dark-mode footer ul li a {
+    color: #FFD700;
+}
+
+body.dark-mode footer ul li a:hover {
+    color: #FFFFE0;
+}
+body.dark-mode .contact-content {
+    background: linear-gradient(135deg, #1F1F1F, #2A2A2A); /* خلفية بتدرج داكن */
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* ظل فاتح للوضع الداكن */
+    color: #FFD700; /* النصوص بالأصفر */
+}

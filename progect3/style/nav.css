@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    width: 100%;
+    height: 55px;
+
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    padding: 9px 0px 0px 25px;
+  }
+  .navbar .toggle-x-btn {
+    display: none;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .toggle-x-btn {
+    display: none;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  .navbar .link-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+  }
+
+  .link-listlink-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+  }
+  
+  .navbar .link-item {
+    display: inline;
+  }
+  
+  .navbar .link-item a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .link-item a:hover, .navbar .link-item a.active-link {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .navbar .btn-login {
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+  }
+  
+  .navbar .btn-login:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar .link-list {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+        display: none;
+        border-radius: 5px;
+    }
+
+    .link-list {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      width: 200px;
+      display: none;
+      border-radius: 5px;
+  }
+
+  
+  .toggle-x-btn{
+    display: block;
+    margin-left: 47%;
+    z-index: 1;
+  }
+    .navbar .link-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+  
+    .navbar .toggle-x-btn {
+        display: block;
+    }
+  
+    .navbar .link-list.show-links {
+        display: flex;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black; 
+      padding: 10px 20px;
+      width: 100%;
+      padding: 0;
+  }
+
+  .logo {
+    padding: 10px;
+    background-color: black;
+  }
+  }
+
+  @media (max-width: 600px) {
+
+
+    /* Styling the burger menu */
+.toggle-x-btn {
+    display: none;
+    font-size: 28px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 10; /* تأكد من أن الزر فوق العناصر الأخرى */
+}
+
+/* Responsive styles for smartphones */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+
+    .toggle-x-btn {
+        display: block;
+        font-size: 28px;
+        margin-right: 20px;
+    }
+
+    .navbar .link-list {
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        display: none; /* مخفي افتراضيًا */
+        border-radius: 0;
+        padding: 10px 0;
+        z-index: 5; /* للتأكد من أن القائمة لا تختفي */
+    }
+
+    .navbar .link-list.show-links {
+        display: flex;
+    }
+
+    .navbar .link-item {
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar .link-item a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .btn-login {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+  }

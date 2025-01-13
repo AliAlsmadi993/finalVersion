@@ -1,0 +1,205 @@
+body {
+  margin: 0 40px;
+  padding: 0;
+}
+
+/* الصفحة الرئيسية */
+#LogIn_page {
+  border: 1px #1d8ec4 solid;
+  box-shadow: 1px 1px 15px #1d8ec4;
+  display: flex;
+  margin-top: 2%;
+}
+
+#login_side {
+  width: 48%;
+  margin: 2%;
+  font-family: "Inter", serif;
+  height: 100%;
+  color: #1d8ec4;
+  position: relative;
+  left: 5%;
+}
+
+#login_titel {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+#login_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_field {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: #1d8ec4 1px solid;
+  width: 80%;
+  margin-top: 1%;
+}
+
+
+label {
+  margin-top: 10%;
+}
+
+#login_btn {
+  display: inline;
+  border: none;
+  width: 20%;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #1d8ec4;
+  color: white;
+}
+
+#signup_link {
+  display: inline;
+}
+
+#signup_link a {
+  font-style: normal;
+  color: #1d8ec4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#login_img_side {
+  background-color: gray;
+  width: 48%;
+  margin: 0;
+  height: 600px;
+}
+#forget_password{  position: absolute;
+  right: 35px;
+  width: 32%;
+  text-decoration: none;
+  color: #1d8ec4;
+  bottom: 70px;
+  
+}
+/* تحسين التجاوب */
+@media (max-width: 426px) {
+  body {
+    margin-top: -50px;
+      display: flex;
+      justify-content: center;
+  }
+
+  #login_img_side {
+      display: none;
+  }
+
+  #LogIn_page {
+      justify-content: center;
+      height: 426px;
+      width: 100%;
+      margin-top: 20%;
+  }
+
+  #login_side {
+      width: 100%;
+  }
+
+  #login_btn {
+      width: 30%;
+  }
+  #forget_password{
+    width: 160px;
+    height: 121px;
+    position: absolute;
+    right: 38px;
+    text-decoration: none;
+    color: #1d8ec4;
+    bottom: 122px;
+}
+  }
+
+
+/* الوضع الداكن */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode #LogIn_page {
+  border: 1px solid #333333;
+  box-shadow: 1px 1px 15px #000000;
+  background-color: #1e1e1e;
+}
+
+body.dark-mode #login_side {
+  color: #80d0ff;
+}
+
+body.dark-mode #login_titel {
+  color: #ffffff;
+}
+
+body.dark-mode #login_form .input_field {
+  border-bottom: 1px solid #80d0ff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+body.dark-mode #login_form .input_field::placeholder {
+  color: #aaaaaa;
+}
+
+body.dark-mode label {
+  color: #e0e0e0;
+}
+
+body.dark-mode #login_btn {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #80d0ff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode #login_btn:hover {
+  background-color: #444444;
+  color: #80d0ff;
+}
+
+body.dark-mode #signup_link a {
+  color: #80d0ff;
+}
+
+body.dark-mode #signup_link a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+body.dark-mode #login_img_side {
+  background-color: #333333;
+}
+
+/* تحسين التجاوب في الوضع الداكن */
+@media (max-width: 426px) {
+  body.dark-mode #LogIn_page {
+      background-color: #1e1e1e;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+
+  body.dark-mode #login_side {
+      color: #ffffff;
+  }
+
+  body.dark-mode #login_form .input_field {
+      border-bottom: 1px solid #80d0ff;
+      color: #ffffff;
+  }
+
+  body.dark-mode #login_btn {
+      background-color: #444444;
+      color: #ffffff;
+  }
+
+  body.dark-mode #signup_link a {
+      color: #80d0ff;
+  }
+}
