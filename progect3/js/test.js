@@ -82,14 +82,42 @@ function displayQuestion() {
 }
 
 function showSubmitModal() {
+    // حساب النتيجة
+    const correctAnswers = questions.map(q => q.correctAnswer); // استخراج الإجابات الصحيحة
+    let score = 0;
+
+    answers.forEach((answer, index) => {
+        if (answer === correctAnswers[index]) {
+            score++;
+        }
+    });
+
+    const totalQuestions = questions.length;
+    const passingScore = Math.ceil(totalQuestions * 0.6); // درجة النجاح 60%
+    const isPass = score >= passingScore; // تحقق إذا كان ناجحًا
+
+    const resultText = `Your score is: ${score}/${totalQuestions}`;
+    const passFailText = isPass ? "Congratulations! You passed the test." : "Sorry, you did not pass the test. Better luck next time!";
+
+    submitModal.innerHTML = `
+        <div class="modal-content">
+            <h3>Test Result</h3>
+            <p>${resultText}</p>
+            <p>${passFailText}</p>
+            <div class="modal-actions">
+                <button class="yes-btn">Finish</button>
+            </div>
+        </div>
+    `;
     submitModal.style.display = "flex";
     document.body.insertAdjacentHTML('beforeend', '<div class="modal-backdrop"></div>');
-}
 
-yesButton.addEventListener('click', () => {
-    localStorage.setItem(`answers_${testType}`, JSON.stringify(answers));
-    window.location.href = `result.html?testType=${testType}`;
-});
+    const yesButton = submitModal.querySelector(".yes-btn");
+    yesButton.addEventListener("click", () => {
+        localStorage.setItem(`answers_${testType}`, JSON.stringify(answers));
+        window.location.href = `result.html?testType=${testType}`;
+    });
+}
 
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
