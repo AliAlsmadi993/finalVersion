@@ -1,42 +1,48 @@
-// إضافة حدث النقر على كل عنصر يحتوي على الفئة "start-test"
+// -----------------------------------------------
+// إضافة أحداث النقر لعناصر الاختبار
+// -----------------------------------------------
 document.querySelectorAll('.start-test').forEach(card => {
     card.addEventListener('click', (e) => {
-        e.preventDefault(); // منع السلوك الافتراضي للرابط، مثل الانتقال إلى صفحة جديدة
+        e.preventDefault(); // منع السلوك الافتراضي للنقر
 
-        const testType = card.dataset.test; // استرجاع نوع الامتحان من خاصية data-test الموجودة في العنصر
-        const previousAnswers = localStorage.getItem(`answers_${testType}`); // التحقق إذا كان المستخدم قد أجاب على هذا الاختبار من قبل باستخدام التخزين المحلي
+        const testType = card.dataset.test; // استرجاع نوع الامتحان من data-test
+        const previousAnswers = localStorage.getItem(`answers_${testType}`); // التحقق من وجود إجابات سابقة
 
         if (previousAnswers) {
-            // إذا كان المستخدم قد أجاب على هذا الاختبار مسبقًا
-            const resultModal = document.getElementById("result-modal"); // العنصر الذي يمثل النافذة المنبثقة
-            const modalMessage = document.getElementById("modal-message"); // العنصر الذي يحتوي على رسالة المودال
-            const viewResultBtn = document.getElementById("view-result-btn"); // زر عرض النتائج في النافذة المنبثقة
+            // -----------------------------------------------
+            // إذا كان المستخدم قد أجاب على الاختبار مسبقًا
+            // -----------------------------------------------
+            const resultModal = document.getElementById("result-modal"); // جلب النافذة المنبثقة
+            const modalMessage = document.getElementById("modal-message"); // رسالة النافذة
+            const viewResultBtn = document.getElementById("view-result-btn"); // زر عرض النتائج
 
             if (resultModal && modalMessage && viewResultBtn) {
-                // إذا كانت العناصر المطلوبة موجودة في الصفحة
-                modalMessage.textContent = `You have already taken the ${testType} test.`; // تحديث نص الرسالة لإبلاغ المستخدم أنه أكمل هذا الامتحان من قبل
+                modalMessage.textContent = `You have already taken the ${testType} test.`; // تحديث الرسالة
                 resultModal.style.display = "flex"; // إظهار النافذة المنبثقة
 
+                // حدث النقر على زر عرض النتائج
                 viewResultBtn.onclick = () => {
-                    // حدث النقر على زر عرض النتائج
-                    window.location.href = `result.html?type=${testType}`; // توجيه المستخدم إلى صفحة النتائج مع تمرير نوع الامتحان في الرابط
+                    window.location.href = `result.html?type=${testType}`; // التوجيه إلى صفحة النتائج
                 };
             }
         } else {
-            // إذا كان المستخدم لم يجيب على هذا الامتحان مسبقًا
-            localStorage.setItem('currentTest', testType); // تخزين نوع الامتحان الحالي في التخزين المحلي
-            window.location.href = `test.html?type=${testType}`; // توجيه المستخدم إلى صفحة الاختبار مع تمرير نوع الامتحان في الرابط
+            // -----------------------------------------------
+            // إذا لم يُكمل المستخدم الاختبار
+            // -----------------------------------------------
+            localStorage.setItem('currentTest', testType); // تخزين نوع الاختبار
+            window.location.href = `test.html?type=${testType}`; // التوجيه إلى صفحة الاختبار
         }
     });
 });
 
+// -----------------------------------------------
 // حدث إغلاق النافذة المنبثقة
-const resultModal = document.getElementById("result-modal"); // الحصول على عنصر النافذة المنبثقة
+// -----------------------------------------------
+const resultModal = document.getElementById("result-modal"); // جلب النافذة المنبثقة
 if (resultModal) {
     resultModal.addEventListener('click', (e) => {
         if (e.target === resultModal) {
-            // إذا تم النقر خارج محتوى النافذة (على الخلفية)
-            resultModal.style.display = "none"; // إخفاء النافذة المنبثقة
+            resultModal.style.display = "none"; // إخفاء النافذة عند النقر خارج المحتوى
         }
     });
 }
