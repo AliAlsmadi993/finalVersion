@@ -6,17 +6,6 @@ const password_input = document.getElementById("password_input")
 
 const form = document.getElementById("login_form");
 
-form.addEventListener(
-  "focus",
-  (event) => {
-    event.target.style.border = "none";
-  },
-  true,
-);
-
-// border-left: none;
-// border-right: none;
-// border-bottom: #1d8ec4 1px solid;
 
 
 

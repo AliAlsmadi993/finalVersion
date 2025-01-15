@@ -172,7 +172,7 @@
 }
 
 /* Responsive styles for smartphones */
-@media (max-width: 600px) {
+@media (max-width: 427px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -230,3 +230,66 @@
 }
 
   }
+  @media (max-width: 426px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 10px;
+    }
+
+    
+
+
+    .navbar .link-list {
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        left: auto;
+        width: 250px; /* تحديد العرض */
+        max-height: 300px; /* تحديد أقصى ارتفاع */
+        background-color: #333;
+        display: none; /* مخفي افتراضيًا */
+        padding: 5px;
+        border-radius: 5px;
+        z-index: 5;
+        overflow-y: auto; /* إضافة تمرير إذا زاد المحتوى */
+    }
+
+    .navbar .link-list.show-links {
+        display: flex;
+    }
+
+    .navbar .link-item {
+        margin: 5px 0;
+        text-align: left; /* محاذاة النص لليسار */
+        padding: 5px;
+    }
+
+    .navbar .link-item a {
+        display: block;
+        padding: 5px 10px;
+        font-size: 12px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar .link-item a:hover {
+        background-color: #444;
+        border-radius: 3px;
+    }
+
+    .btn-login {
+        width: auto;
+        margin: 5px auto;
+        text-align: center;
+        font-size: 12px;
+        padding: 5px 10px;
+        background-color: #007BFF;
+        border-radius: 3px;
+    }
+
+    .btn-login:hover {
+        background-color: #0056b3;
+    }
+}
