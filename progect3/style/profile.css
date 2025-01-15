@@ -12,6 +12,7 @@ body {
 
 /* الحاوية الرئيسية */
 .container {
+  
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -173,12 +174,17 @@ body {
 }
 
 @media (max-width: 426px) {
+  .navbar .toggle-x-btn {
+    margin-top: -14px;}
+  
   .container {
-    margin-bottom: -273px;
+    
+        margin-bottom: -170px;
     flex-direction: column;
     width: 100%;
     padding: 0px;
     margin-left: 0px;
+
 }
 
   .Leftside {

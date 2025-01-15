@@ -210,3 +210,72 @@ document.querySelectorAll("#test-buttons .btn-result").forEach((button) => {
 darkModeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode"); // تبديل الوضع
 });
+
+
+
+
+// // -----------------------------------------------
+// // دالة توليد ملف PDF باستخدام jsPDF و AutoTable
+// // -----------------------------------------------
+// function generatePDF(testType, score, correctAnswers, answers) {
+//     const { jsPDF } = window.jspdf; // استيراد مكتبة jsPDF
+//     const doc = new jsPDF(); // إنشاء مستند PDF جديد
+
+//     // -----------------------------------------------
+//     // جلب بيانات المستخدم من LocalStorage
+//     // -----------------------------------------------
+//     const users = JSON.parse(localStorage.getItem('users')) || [];
+//     let userName = "Unknown User";
+//     let userEmail = "No Email Provided";
+
+//     if (users.length > 0) {
+//         // استخراج بيانات آخر مستخدم
+//         const latestUser = users[users.length - 1];
+//         userName = latestUser.name || userName;
+//         userEmail = latestUser.email || userEmail;
+//     }
+
+//     // -----------------------------------------------
+//     // إعداد التقرير
+//     // -----------------------------------------------
+//     const margin = 15; // الهوامش
+//     let currentY = margin; // موضع الكتابة الحالي
+
+//     // إضافة العنوان والمعلومات
+//     doc.setFontSize(22);
+//     doc.setTextColor(0, 102, 204);
+//     doc.text("Test Results", margin, currentY);
+//     currentY += 15;
+
+//     doc.setFontSize(16);
+//     doc.setTextColor(51, 51, 51);
+//     doc.text(`Name: ${userName}`, margin, currentY);
+//     currentY += 10;
+//     doc.text(`Email: ${userEmail}`, margin, currentY);
+//     currentY += 10;
+//     doc.text(`Test Type: ${testType}`, margin, currentY);
+//     currentY += 10;
+//     doc.text(`Score: ${score}/${correctAnswers.length}`, margin, currentY);
+//     currentY += 15;
+
+//     // -----------------------------------------------
+//     // إضافة جدول النتائج التفصيلية باستخدام AutoTable
+//     // -----------------------------------------------
+//     const tableData = correctAnswers.map((item, index) => ({
+//         Question: item.question,
+//         "Your Answer": answers[index] || "Not Answered",
+//         "Correct Answer": item.correctAnswer,
+//     }));
+
+//     doc.autoTable({
+//         startY: currentY, // بداية الجدول
+//         head: [['Question', 'Your Answer', 'Correct Answer']], // رأس الجدول
+//         body: tableData.map(row => [row.Question, row["Your Answer"], row["Correct Answer"]]),
+//         theme: 'grid', // نمط الجدول
+//     });
+
+//     // -----------------------------------------------
+//     // حفظ ملف PDF
+//     // -----------------------------------------------
+//     doc.save(`${testType}_results.pdf`);
+// }

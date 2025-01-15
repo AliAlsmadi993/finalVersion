@@ -142,7 +142,7 @@ function showSubmitModal() {
         </div>
     `;
     submitModal.style.display = "flex"; // إظهار النافذة
-    document.body.insertAdjacentHTML('beforeend', '<div class="modal-backdrop"></div>'); // إضافة خلفية
+    document.body.insertAdjacentHTML('beforeend', '<div class="modal-backdrop"></div>'); 
 
     // إنهاء الاختبار
     const yesButton = submitModal.querySelector(".yes-btn");
